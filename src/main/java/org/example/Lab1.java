@@ -1,6 +1,6 @@
 package org.example;
 
-public class Main {
+public class Lab1 {
     static final Object countSync = new Object();
     static int iterations = 100_000;
     static int counter = 0;
