@@ -1,11 +1,9 @@
-package org.example;
-
-import java.util.concurrent.CyclicBarrier;
+package org.example.lab2;
 
 class Worker implements Runnable{
-    private CyclicBarrier barrier;
+    private java.util.concurrent.CyclicBarrier barrier;
     private String name;
-    public Worker(CyclicBarrier barrier, String name) {
+    public Worker(java.util.concurrent.CyclicBarrier barrier, String name) {
         this.barrier = barrier;
         this.name = name;
     }
@@ -24,10 +22,10 @@ class Worker implements Runnable{
     }
 }
 
-public class Lab2CyclicBarrier {
+public class CyclicBarrier {
     public static void main (String[] args){
         int numWorkers = 3;
-        CyclicBarrier barrier = new CyclicBarrier(numWorkers, () -> {
+        java.util.concurrent.CyclicBarrier barrier = new java.util.concurrent.CyclicBarrier(numWorkers, () -> {
             System.out.println("All workers have reached the barrier");
         });
         for (int i = 0; i < numWorkers; i++){

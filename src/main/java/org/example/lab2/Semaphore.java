@@ -1,11 +1,9 @@
-package org.example;
+package org.example.lab2;
 
-import java.util.concurrent.Semaphore;
-
-public class Lab2Semaphore {
+public class Semaphore {
     public static void main(String[] args) {
         final int numThreads = 3;
-        final Semaphore semaphore = new Semaphore(numThreads);
+        final java.util.concurrent.Semaphore semaphore = new java.util.concurrent.Semaphore(numThreads);
         for (int i = 0; i < 9; i++) {
             Thread thread = new Thread(() -> {
                 try {

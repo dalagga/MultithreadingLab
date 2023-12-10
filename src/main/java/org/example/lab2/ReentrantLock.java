@@ -1,12 +1,11 @@
-package org.example;
+package org.example.lab2;
 
 
 import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
 class Counter {
     private int count = 0;
-    private Lock lock = new ReentrantLock();
+    private Lock lock = new java.util.concurrent.locks.ReentrantLock();
 
     public void increment() {
         lock.lock();
@@ -25,7 +24,7 @@ class Counter {
         }
     }
 }
-public class Lab2ReentrantLock {
+public class ReentrantLock {
     public static void main (String[] args){
     Counter counter = new Counter();
     Thread thread1 = new Thread(() -> {

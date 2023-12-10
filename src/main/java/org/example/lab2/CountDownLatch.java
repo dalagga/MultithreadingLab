@@ -1,13 +1,10 @@
-package org.example;
+package org.example.lab2;
 
-import java.awt.*;
-import java.util.concurrent.CountDownLatch;
-
-public class Lab2CountDownLatch{
+public class CountDownLatch {
 
     private static class Task implements Runnable{
-        private final CountDownLatch latch;
-        public Task (CountDownLatch latch){
+        private final java.util.concurrent.CountDownLatch latch;
+        public Task (java.util.concurrent.CountDownLatch latch){
             this.latch = latch;
         }
         @Override
@@ -22,7 +19,7 @@ public class Lab2CountDownLatch{
         }}
 
         public static void main(String[] args){
-            CountDownLatch latch = new CountDownLatch(1);
+            java.util.concurrent.CountDownLatch latch = new java.util.concurrent.CountDownLatch(1);
             for (int i = 0; i < 6; i++){
                 Thread task = new Thread(new Task(latch));
                 task.start();
