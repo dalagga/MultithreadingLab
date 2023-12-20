@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link th:href="@{/main.css}" rel="stylesheet"/>
+    <link th:href="@{https://fonts.googleapis.com/icon?family=Material+Icons}" rel="stylesheet">
+</head>
+<body>
+<div th:fragment="header" class="search-box">
+    <form th:action="@{/geocode}" method="get">
+        <div>
+            <p class="weza-katakana">ウェザー・リポート</p>
+            <input class="searchbar" type="text" name="city" placeholder="Enter the location" required>
+            <br>
+            <button type="button" class = "select" onclick="getLocation()">Weather in my location</button>
+        </div>
+        <script>
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(function(position) {
+                        var lat = position.coords.latitude;
+                        var lon = position.coords.longitude;
+                        sendLocation(lat, lon);
+                    });
+                } else {
+                    alert("Geolocation is not supported by this browser.");
+                }
+            }
+
+            function sendLocation(lat, lon) {
+                window.location.href = "/weather?lat=" + lat + "&lon=" + lon;
+            }
+        </script>
+    </form>
+</div>
+</body>
+</html>

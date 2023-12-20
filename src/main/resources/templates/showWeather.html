@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link th:href="@{/main.css}" rel="stylesheet"/>
+</head>
+<body>
+<header class="search-div-weather-page" th:insert="~{headerSearch :: header}"></header>
+<br>
+<div class="show-weather-text">
+    <p th:text="'Avg temperature: ' + ${#numbers.formatDecimal(temperature, 1, 1)}+'°C'"></p>
+    <p th:text="'Avg humidity: ' + ${#numbers.formatDecimal(humidity, 1, 1)}+'%'"></p>
+</div>
+</body>
+</html>

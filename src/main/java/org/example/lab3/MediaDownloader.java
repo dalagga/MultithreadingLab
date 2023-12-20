@@ -43,11 +43,10 @@ public class MediaDownloader {
         fileUrls.add("https://fastly.picsum.photos/id/769/200/300.jpg?hmac=cl3KEs924CuE_nF1wC98S7NBc8JPXkf0hlwtPXGIIhM");
         fileUrls.add("https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQX-930vEtRP9rsvHBTX6l-1jfabMcycY5cVTuFqI0GXcWlfc4q5ZQlCNnrxej50k0_UL0lbW25eENTy2VCX15lyXl4ZMduNNr6Ioj2AelJ0b2PhXwlsH40BT7WqMKMrdjs0-TJUr0EYPkjtWH5RW.jpg?r=f84");
         fileUrls.add("https://i.pinimg.com/564x/39/12/0c/39120c806b86c61a14ebdf41878b39e1.jpg");
-        fileUrls.add("https://scontent.cdn1instagram.com/v/t51.2885-15/408012149_665691815738857_5018750286023870848_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=101&_nc_ohc=9bmryVG0rIYAX8_RhGw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzI1MjU3ODEwOTQ0NDg4NTI5MQ%3D%3D.2-ccb7-5&oh=00_AfAg80-4cgnm3COddvwpCQYwcd3UQ4fvTq-Nop5wlHtinA&oe=657946A0&_nc_sid=10d13b");
-        fileUrls.add("https://example.com/1.jpg");
+        //fileUrls.add("https://scontent.cdn1instagram.com/v/t51.2885-15/408012149_665691815738857_5018750286023870848_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=101&_nc_ohc=9bmryVG0rIYAX8_RhGw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzI1MjU3ODEwOTQ0NDg4NTI5MQ%3D%3D.2-ccb7-5&oh=00_AfAg80-4cgnm3COddvwpCQYwcd3UQ4fvTq-Nop5wlHtinA&oe=657946A0&_nc_sid=10d13b");
+        //fileUrls.add("https://example.com/1.jpg");
         fileUrls.add("https://i.scdn.co/image/ab67616d0000b2733346c90e405bb64b6300df88");
         fileUrls.add("https://images.saymedia-content.com/.image/t_share/MTc2Mjk4MjU5Mjk4NTkxOTM0/the-end-of-evangelion-has-an-even-darker-unused-ending.jpg");
-        fileUrls.add("https://scontent.cdninstagram.com/v/t51.2885-15/408012149_665691815738857_5018750286023870848_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=101&_nc_ohc=9bmryVG0rIYAX8_RhGw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzI1MjU3ODEwOTQ0NDg4NTI5MQ%3D%3D.2-ccb7-5&oh=00_AfAg80-4cgnm3COddvwpCQYwcd3UQ4fvTq-Nop5wlHtinA&oe=657946A0&_nc_sid=10d13b");
         return fileUrls;
     }
 }

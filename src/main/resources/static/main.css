@@ -1,0 +1,71 @@
+.body-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Додайте це, щоб усунути відступи від країв body */
+}
+
+.center-div {
+    text-align: center;
+    /* Стилі вашого div */
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.search-div-weather-page {
+    text-align: center;
+}
+
+input[type=text], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    width: 120%; /* Adjust the width as needed */
+    max-width: 400px; /* Optional: Set a maximum width */
+    font-size: 16px;
+}
+
+input[type=text]:hover {
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+input[type=text]:focus {
+    outline: none;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+button{
+    background-color: #f7f7f7;
+    color: #131313;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #e7e7e7;
+}
+
+.show-weather-text{
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #131313;
+    text-align: center;
+}
+
+.weza-katakana{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+}
